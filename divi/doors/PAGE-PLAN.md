@@ -10,7 +10,7 @@ URL: `https://plastikaokon.by/production/plastikovye-dveri/` (без родит�
 | 2 | Полоса доверия | `divi-doors-2-trust.html` | белый |
 | 3 | Какие двери мы делаем (CSS ID секции: `types`) | `divi-doors-3-types.html` | белый |
 | 4 | Какую дверь выбрать (сравнение по задачам) | `divi-doors-4-choose.html` | #F3F5F9 |
-| 5 | Наши работы + фильтр | ждёт фото из медиатеки | белый |
+| 5 | Наши работы + фильтр | `divi-doors-8-works.html` (вставить адреса фото, убрать все REPLACE) | белый |
 | 6 | Как мы работаем | `divi-doors-5-process.html` | #F3F5F9 или белый |
 | 7 | Отзывы | реальные отзывы клиентов, без выдуманных | белый |
 | 8 | Вопросы и ответы | `divi-doors-6-faq.html` | #F3F5F9 |
