@@ -1,0 +1,52 @@
+<!-- Блок «Вопросы и ответы» (хаб «Пластиковые двери») — вставить целиком в модуль Code.
+     Секция: фон #F3F5F9, Padding 96 / 96 px (телефон 56 / 56), одна строка, Max Width 900 px.
+     Разметку FAQPage не добавляем: Google не показывает по ней расширенные результаты. -->
+<div class="po-fq">
+  <h2 class="po-fq__title">Вопросы и ответы</h2>
+  <div class="po-fq__list">
+    <details class="po-fq__item" open>
+      <summary>Сколько стоит пластиковая дверь?</summary>
+      <p>Цена зависит от типа двери, размера, заполнения (стекло, глухая, комбинированная) и фурнитуры. Точную стоимость назовём после бесплатного замера. Работаем без предоплаты или в рассрочку до 48 месяцев.</p>
+    </details>
+    <details class="po-fq__item">
+      <summary>Замер действительно бесплатный?</summary>
+      <p>Да. Замерщик приедет с образцами профилей и цветов, измерит проём и подскажет подходящий вариант. Заказывать после замера необязательно.</p>
+    </details>
+    <details class="po-fq__item">
+      <summary>Делаете двери нестандартных размеров?</summary>
+      <p>Да, изготавливаем по размерам вашего проёма: любой размер и форма, от однопольной двери до входной группы.</p>
+    </details>
+    <details class="po-fq__item">
+      <summary>Какая гарантия?</summary>
+      <p>5 лет на изделия и 3 года на монтаж.</p>
+    </details>
+    <details class="po-fq__item">
+      <summary>Чем входная дверь отличается от балконной?</summary>
+      <p>Входная дверь предназначена для входа в частный дом: она тёплая и оснащается многозапорным замком. Балконная ведёт на балкон или лоджию и часто идёт в составе балконного блока с окном.</p>
+    </details>
+    <details class="po-fq__item">
+      <summary>В каких районах вы работаете?</summary>
+      <p>В Минске и Минской области.</p>
+    </details>
+  </div>
+</div>
+
+<style>
+.po-fq{--r:#D20A1E;--ink:#1C2226;--mut:#454C52;--line:#E3E8F0;display:flex;flex-direction:column;gap:32px;font-family:inherit;color:var(--ink)}
+.po-fq *{box-sizing:border-box}
+.po-fq__title{margin:0!important;padding:0!important;font-size:42px!important;line-height:1.12!important;font-weight:800!important;letter-spacing:-.02em;color:var(--ink)!important}
+.po-fq__list{display:flex;flex-direction:column;gap:10px}
+.po-fq__item{border:1px solid var(--line);border-radius:16px;background:#fff}
+.po-fq__item summary{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:56px;padding:12px 24px;font-size:18px;font-weight:700;line-height:1.35;cursor:pointer;list-style:none}
+.po-fq__item summary::-webkit-details-marker{display:none}
+.po-fq__item summary::after{content:"+";flex:0 0 auto;font-size:26px;font-weight:400;color:var(--r)}
+.po-fq__item[open] summary::after{content:"\2212"}
+.po-fq__item summary:focus-visible{outline:3px solid var(--r);outline-offset:-3px;border-radius:16px}
+.po-fq__item p{margin:0!important;padding:0 24px 20px!important;font-size:16px;line-height:1.6;color:var(--mut)}
+@media (max-width:767px){
+  .po-fq{gap:20px}
+  .po-fq__title{font-size:28px!important;line-height:1.15!important}
+  .po-fq__item summary{padding:10px 16px;font-size:16px}
+  .po-fq__item p{padding:0 16px 16px!important;font-size:15px}
+}
+</style>

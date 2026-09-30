@@ -1,0 +1,27 @@
+<!-- Финальный призыв (хаб «Пластиковые двери») — вставить целиком в модуль Code.
+     Секция: фон #1C2226, Padding 72 / 72 px (телефон 48 / 48), одна строка, Max Width 1200 px. -->
+<div class="po-cta">
+  <div class="po-cta__txt">
+    <h2 class="po-cta__title">Закажите замер — привезём образцы и назовём точную цену</h2>
+    <p class="po-cta__sub">Бесплатно. Без предоплаты или в рассрочку до 48 месяцев. Минск и Минская область.</p>
+  </div>
+  <div class="po-cta__act">
+    <a class="po-cta__btn" href="#door-calc">Подобрать дверь</a>
+    <a class="po-cta__tel" href="tel:+375291043440">+375 29 104-34-40</a>
+  </div>
+</div>
+
+<style>
+.po-cta{--r:#D20A1E;display:flex;align-items:center;justify-content:space-between;gap:40px;font-family:inherit;color:#fff}
+.po-cta *{box-sizing:border-box}
+.po-cta__title{margin:0!important;padding:0!important;max-width:680px;font-size:34px!important;line-height:1.2!important;font-weight:800!important;letter-spacing:-.01em;color:#fff!important}
+.po-cta__sub{margin:10px 0 0!important;padding:0!important;font-size:16px;line-height:1.5;color:#C9D0D6}
+.po-cta__act{display:flex;flex-direction:column;align-items:stretch;gap:12px;flex-shrink:0;text-align:center}
+.po-cta__btn{display:flex;align-items:center;justify-content:center;min-height:54px;padding:0 32px;border-radius:999px;background:var(--r);color:#fff!important;font-size:16px;font-weight:700;text-decoration:none!important;transition:background .2s}
+.po-cta__btn:hover{background:#B3081A}
+.po-cta__tel{display:flex;align-items:center;justify-content:center;min-height:44px;color:#fff!important;font-size:20px;font-weight:700;text-decoration:none!important}
+.po-cta__btn:focus-visible,.po-cta__tel:focus-visible{outline:3px solid #fff;outline-offset:3px;border-radius:999px}
+@media (prefers-reduced-motion:reduce){.po-cta *{transition:none!important}}
+@media (max-width:860px){.po-cta{flex-direction:column;align-items:flex-start;gap:24px}.po-cta__act{align-self:stretch}}
+@media (max-width:767px){.po-cta__title{font-size:24px!important}.po-cta__sub{font-size:15px}}
+</style>

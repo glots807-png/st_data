@@ -1,0 +1,47 @@
+<!-- Блок «Какую дверь выбрать» (хаб «Пластиковые двери») — вставить целиком в модуль Code.
+     Новая секция после каталога: фон #F3F5F9, Padding 96 / 96 px (телефон 56 / 56), одна строка, Max Width 1200 px. -->
+<div class="po-ch">
+  <div class="po-ch__head">
+    <h2 class="po-ch__title">Какую дверь выбрать</h2>
+    <p class="po-ch__lead">Найдите свою задачу — справа подскажем подходящий тип и дадим ссылку на подробности.</p>
+  </div>
+  <div class="po-ch__table" role="table" aria-label="Какая дверь подходит для какой задачи">
+    <div class="po-ch__row po-ch__row--h" role="row">
+      <span role="columnheader">Задача</span><span role="columnheader">Подойдёт</span><span role="columnheader">Главное</span>
+    </div>
+    <div class="po-ch__row" role="row"><span class="po-ch__task" role="cell">Вход в частный дом или на дачу</span><a class="po-ch__type" role="cell" href="https://plastikaokon.by/production/plastikovye-dveri/vkhodnaya-dver/">Входная дверь</a><span class="po-ch__note" role="cell">Тёплая, с многозапорным замком; со стеклом, глухая или комбинированная</span></div>
+    <div class="po-ch__row" role="row"><span class="po-ch__task" role="cell">Выход на балкон или лоджию</span><a class="po-ch__type" role="cell" href="https://plastikaokon.by/production/plastikovye-dveri/balkonnaya-dver/">Балконная дверь</a><span class="po-ch__note" role="cell">Отдельно или в составе балконного блока с окном</span></div>
+    <div class="po-ch__row" role="row"><span class="po-ch__task" role="cell">Светлый вход в магазин, офис или коттедж</span><a class="po-ch__type" role="cell" href="https://plastikaokon.by/production/plastikovye-dveri/vkhodnye-gruppy/">Входная группа</a><span class="po-ch__note" role="cell">Дверь с боковыми и верхними светопрозрачными частями</span></div>
+    <div class="po-ch__row" role="row"><span class="po-ch__task" role="cell">Широкий выход на террасу или в сад</span><a class="po-ch__type" role="cell" href="https://plastikaokon.by/production/plastikovye-dveri/portaly/">Раздвижной портал</a><span class="po-ch__note" role="cell">Большие створки сдвигаются вбок и открывают проход</span></div>
+    <div class="po-ch__row" role="row"><span class="po-ch__task" role="cell">Максимум света и вид на участок</span><a class="po-ch__type" role="cell" href="https://plastikaokon.by/production/plastikovye-dveri/panoramnye-dveri/">Панорамная дверь</a><span class="po-ch__note" role="cell">Остекление от пола до потолка в тонком профиле</span></div>
+    <div class="po-ch__row" role="row"><span class="po-ch__task" role="cell">Дверь или перегородка внутри офиса</span><a class="po-ch__type" role="cell" href="https://plastikaokon.by/production/plastikovye-dveri/mezhkomnatnaya-ofisnaya-dver/">Офисная межкомнатная</a><span class="po-ch__note" role="cell">Светлая, не боится влаги и шума</span></div>
+    <div class="po-ch__row" role="row"><span class="po-ch__task" role="cell">Большой проём и тяжёлые створки</span><a class="po-ch__type" role="cell" href="https://plastikaokon.by/production/plastikovye-dveri/podyemno-razdvizhnye-dveri-vekamotion/">Подъёмно-раздвижная VEKAMOTION</a><span class="po-ch__note" role="cell">Створки приподнимаются и двигаются лёгким движением руки</span></div>
+    <div class="po-ch__row" role="row"><span class="po-ch__task" role="cell">Веранда или терраса, которую открывают летом</span><a class="po-ch__type" role="cell" href="https://plastikaokon.by/production/plastikovye-dveri/razdvizhnye-okna-dlya-verandy-i-terrasy/">Раздвижные окна</a><span class="po-ch__note" role="cell">Широкие створки сдвигаются вбок</span></div>
+  </div>
+  <p class="po-ch__foot">Не уверены? <a href="#door-calc">Подберите дверь онлайн</a> или вызовите замерщика — он посмотрит проём и подскажет.</p>
+</div>
+
+<style>
+.po-ch{--r:#D20A1E;--ink:#1C2226;--mut:#5B6268;--line:#E3E8F0;display:flex;flex-direction:column;gap:32px;font-family:inherit;color:var(--ink)}
+.po-ch *{box-sizing:border-box}
+.po-ch__title{margin:0!important;padding:0!important;font-size:42px!important;line-height:1.12!important;font-weight:800!important;letter-spacing:-.02em;color:var(--ink)!important}
+.po-ch__lead{margin:12px 0 0!important;padding:0!important;max-width:560px;font-size:16px;line-height:1.55;color:var(--mut)}
+.po-ch__table{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:20px;background:#fff;overflow:hidden}
+.po-ch__row{display:grid;grid-template-columns:1.3fr 1.1fr 1.6fr;gap:24px;align-items:center;padding:18px 28px;border-top:1px solid var(--line);font-size:16px;line-height:1.45}
+.po-ch__row:first-child{border-top:0}
+.po-ch__row--h{padding:14px 28px;background:#fff;font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--mut)}
+.po-ch__task{font-weight:700}
+.po-ch__type{color:var(--r)!important;font-weight:700;text-decoration:none!important;min-height:44px;display:flex;align-items:center}
+.po-ch__type:hover{text-decoration:underline!important;text-underline-offset:3px}
+.po-ch__type:focus-visible,.po-ch__foot a:focus-visible{outline:3px solid var(--r);outline-offset:3px;border-radius:6px}
+.po-ch__note{color:var(--mut);font-size:15px}
+.po-ch__foot{margin:0!important;padding:0!important;font-size:16px;color:var(--mut)}
+.po-ch__foot a{color:var(--r)!important;font-weight:700}
+@media (max-width:980px){.po-ch__row{grid-template-columns:1fr 1fr;gap:6px 20px}.po-ch__note{grid-column:1 / -1}.po-ch__row--h{display:none}}
+@media (max-width:767px){
+  .po-ch{gap:20px}
+  .po-ch__title{font-size:28px!important;line-height:1.15!important}
+  .po-ch__row{grid-template-columns:1fr;gap:2px;padding:16px}
+  .po-ch__type{min-height:44px}
+}
+</style>
