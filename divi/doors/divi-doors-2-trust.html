@@ -1,0 +1,40 @@
+<!-- Полоса доверия (пластиковые двери) — вставить целиком в модуль Code -->
+<div class="po-trust">
+  <div class="po-trust__item">
+    <span class="po-trust__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 21h20M4 21V10l5-3v14M9 21V4l11 5v12"/></svg></span>
+    <span class="po-trust__txt"><b>Своё производство</b><small>с 2009 года в Минске</small></span>
+  </div>
+  <div class="po-trust__item">
+    <span class="po-trust__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="M4 9h16M9 9v11"/></svg></span>
+    <span class="po-trust__txt"><b>Любой размер</b><small>по вашему проёму</small></span>
+  </div>
+  <div class="po-trust__item">
+    <span class="po-trust__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6l8-3Z"/><path d="M9 12l2 2 4-4"/></svg></span>
+    <span class="po-trust__txt"><b>Гарантия 5 лет</b><small>на изделия, 3 года на монтаж</small></span>
+  </div>
+  <div class="po-trust__item">
+    <span class="po-trust__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18M7 15h3"/></svg></span>
+    <span class="po-trust__txt"><b>Рассрочка до 48 мес.</b><small>без первого взноса</small></span>
+  </div>
+</div>
+
+<style>
+.po-trust{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;font-family:inherit;color:#1C2226}
+.po-trust *{box-sizing:border-box}
+.po-trust__item{display:flex;align-items:center;gap:14px}
+.po-trust__ico{flex:0 0 48px;height:48px;display:flex;align-items:center;justify-content:center;border-radius:12px;background:#F3F5F9;color:#D20A1E}
+.po-trust__ico svg{width:24px;height:24px}
+.po-trust__txt b{display:block;font-size:16px;line-height:1.3;font-weight:800}
+.po-trust__txt small{display:block;margin-top:2px;font-size:14px;line-height:1.35;color:#5B6268}
+@media (max-width:980px){
+  .po-trust{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 24px}
+}
+@media (max-width:767px){
+  .po-trust{gap:10px}
+  .po-trust__item{flex-direction:column;align-items:flex-start;gap:8px;padding:12px;border-radius:14px;background:#F3F5F9}
+  .po-trust__ico{flex:0 0 auto;width:36px;height:36px;border-radius:10px;background:#fff}
+  .po-trust__ico svg{width:20px;height:20px}
+  .po-trust__txt b{font-size:14px}
+  .po-trust__txt small{font-size:12px}
+}
+</style>

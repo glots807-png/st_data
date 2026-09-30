@@ -1,0 +1,256 @@
+<!-- Первый экран хаба «Пластиковые двери»: подбор двери — вставить целиком в модуль Code.
+     Заявка уходит на sales@plastikaokon.by через обработчик калькулятора (mu-plugin po-balkon-calc.php). -->
+<div class="po-dr" id="door-calc" data-scen="home">
+  <div class="po-dr__head">
+    <h2 class="po-dr__title">Подберём дверь</h2>
+    <p class="po-dr__sub" id="po-dr-q">Куда нужна дверь?</p>
+  </div>
+
+  <div class="po-dr__scens" role="group" aria-labelledby="po-dr-q">
+    <button type="button" class="po-dr__scen is-active" data-scen="home" aria-pressed="true">
+      <svg class="po-dr__ico" data-k="home" width="44" height="44" viewBox="0 0 160 160" fill="none" aria-hidden="true" stroke-linejoin="round"><path d="M8 152H152" stroke="#9AA3AE" stroke-width="3"></path><rect x="52" y="12" width="56" height="140" fill="#FFFFFF" stroke="#1C2226" stroke-width="3.5"></rect><rect x="60" y="20" width="40" height="62" fill="#DCE7F1"></rect><rect x="60" y="90" width="40" height="54" fill="#E3E8F0"></rect><rect x="94" y="82" width="5" height="20" rx="2" fill="#D20A1E"></rect></svg>
+      <span>В дом</span>
+    </button>
+    <button type="button" class="po-dr__scen" data-scen="balcony" aria-pressed="false">
+      <svg class="po-dr__ico" data-k="balcony" width="44" height="44" viewBox="0 0 160 160" fill="none" aria-hidden="true" stroke-linejoin="round"><path d="M8 152H152" stroke="#9AA3AE" stroke-width="3"></path><rect x="28" y="12" width="104" height="140" fill="#FFFFFF" stroke="#1C2226" stroke-width="3.5"></rect><path d="M80 12v140" stroke="#1C2226" stroke-width="3.5"></path><rect x="35" y="19" width="38" height="126" fill="#DCE7F1"></rect><rect x="87" y="19" width="38" height="68" fill="#DCE7F1"></rect><rect x="87" y="94" width="38" height="51" fill="#E3E8F0"></rect><path d="M35 19 L73 82 L35 145" stroke="#D20A1E" stroke-width="2.5" stroke-linecap="round"></path><rect x="67" y="74" width="4" height="16" rx="2" fill="#1C2226"></rect></svg>
+      <span>На балкон</span>
+    </button>
+    <button type="button" class="po-dr__scen" data-scen="terrace" aria-pressed="false">
+      <svg class="po-dr__ico" data-k="terrace" width="44" height="44" viewBox="0 0 160 160" fill="none" aria-hidden="true" stroke-linejoin="round"><path d="M8 152H152" stroke="#9AA3AE" stroke-width="3"></path><rect x="10" y="20" width="140" height="132" fill="#FFFFFF" stroke="#1C2226" stroke-width="3.5"></rect><rect x="18" y="28" width="66" height="116" fill="#DCE7F1" stroke="#1C2226" stroke-width="2"></rect><rect x="74" y="32" width="68" height="108" fill="#E9F0F7" stroke="#D20A1E" stroke-width="2.5"></rect><path d="M130 86 H96 M104 78 L96 86 L104 94" stroke="#D20A1E" stroke-width="3" stroke-linecap="round"></path></svg>
+      <span>На террасу</span>
+    </button>
+    <button type="button" class="po-dr__scen" data-scen="shop" aria-pressed="false">
+      <svg class="po-dr__ico" data-k="shop" width="44" height="44" viewBox="0 0 160 160" fill="none" aria-hidden="true" stroke-linejoin="round"><path d="M8 152H152" stroke="#9AA3AE" stroke-width="3"></path><rect x="12" y="12" width="136" height="140" fill="#FFFFFF" stroke="#1C2226" stroke-width="3.5"></rect><path d="M12 44H148M44 44v108M116 44v108M80 44v108" stroke="#1C2226" stroke-width="3"></path><rect x="19" y="19" width="122" height="19" fill="#DCE7F1"></rect><rect x="19" y="50" width="19" height="96" fill="#DCE7F1"></rect><rect x="122" y="50" width="19" height="96" fill="#DCE7F1"></rect><rect x="50" y="50" width="24" height="96" fill="#DCE7F1"></rect><rect x="86" y="50" width="24" height="96" fill="#DCE7F1"></rect><rect x="70" y="90" width="4" height="18" rx="2" fill="#D20A1E"></rect><rect x="86" y="90" width="4" height="18" rx="2" fill="#D20A1E"></rect></svg>
+      <span>В магазин, офис</span>
+    </button>
+  </div>
+
+  <div class="po-dr__pic">
+    <svg class="po-dr__big" data-k="home" width="180" height="180" viewBox="0 0 160 160" fill="none" aria-hidden="true" stroke-linejoin="round"><path d="M8 152H152" stroke="#9AA3AE" stroke-width="3"></path><rect x="52" y="12" width="56" height="140" fill="#FFFFFF" stroke="#1C2226" stroke-width="3.5"></rect><rect x="60" y="20" width="40" height="62" fill="#DCE7F1"></rect><rect x="60" y="90" width="40" height="54" fill="#E3E8F0"></rect><rect x="94" y="82" width="5" height="20" rx="2" fill="#D20A1E"></rect></svg>
+    <svg class="po-dr__big" data-k="balcony" width="180" height="180" viewBox="0 0 160 160" fill="none" aria-hidden="true" stroke-linejoin="round"><path d="M8 152H152" stroke="#9AA3AE" stroke-width="3"></path><rect x="28" y="12" width="104" height="140" fill="#FFFFFF" stroke="#1C2226" stroke-width="3.5"></rect><path d="M80 12v140" stroke="#1C2226" stroke-width="3.5"></path><rect x="35" y="19" width="38" height="126" fill="#DCE7F1"></rect><rect x="87" y="19" width="38" height="68" fill="#DCE7F1"></rect><rect x="87" y="94" width="38" height="51" fill="#E3E8F0"></rect><path d="M35 19 L73 82 L35 145" stroke="#D20A1E" stroke-width="2.5" stroke-linecap="round"></path><rect x="67" y="74" width="4" height="16" rx="2" fill="#1C2226"></rect></svg>
+    <svg class="po-dr__big" data-k="terrace" width="180" height="180" viewBox="0 0 160 160" fill="none" aria-hidden="true" stroke-linejoin="round"><path d="M8 152H152" stroke="#9AA3AE" stroke-width="3"></path><rect x="10" y="20" width="140" height="132" fill="#FFFFFF" stroke="#1C2226" stroke-width="3.5"></rect><rect x="18" y="28" width="66" height="116" fill="#DCE7F1" stroke="#1C2226" stroke-width="2"></rect><rect x="74" y="32" width="68" height="108" fill="#E9F0F7" stroke="#D20A1E" stroke-width="2.5"></rect><path d="M130 86 H96 M104 78 L96 86 L104 94" stroke="#D20A1E" stroke-width="3" stroke-linecap="round"></path></svg>
+    <svg class="po-dr__big" data-k="shop" width="180" height="180" viewBox="0 0 160 160" fill="none" aria-hidden="true" stroke-linejoin="round"><path d="M8 152H152" stroke="#9AA3AE" stroke-width="3"></path><rect x="12" y="12" width="136" height="140" fill="#FFFFFF" stroke="#1C2226" stroke-width="3.5"></rect><path d="M12 44H148M44 44v108M116 44v108M80 44v108" stroke="#1C2226" stroke-width="3"></path><rect x="19" y="19" width="122" height="19" fill="#DCE7F1"></rect><rect x="19" y="50" width="19" height="96" fill="#DCE7F1"></rect><rect x="122" y="50" width="19" height="96" fill="#DCE7F1"></rect><rect x="50" y="50" width="24" height="96" fill="#DCE7F1"></rect><rect x="86" y="50" width="24" height="96" fill="#DCE7F1"></rect><rect x="70" y="90" width="4" height="18" rx="2" fill="#D20A1E"></rect><rect x="86" y="90" width="4" height="18" rx="2" fill="#D20A1E"></rect></svg>
+    <span class="po-dr__caption"></span>
+  </div>
+
+  <div class="po-dr__fills-wrap">
+    <span class="po-dr__label" id="po-dr-fill">Заполнение</span>
+    <div class="po-dr__fills" role="group" aria-labelledby="po-dr-fill">
+    <button type="button" class="po-dr__fill is-active" data-fill="glass" aria-pressed="true">Со стеклом</button>
+    <button type="button" class="po-dr__fill" data-fill="panel" aria-pressed="false">Глухая</button>
+    <button type="button" class="po-dr__fill" data-fill="combo" aria-pressed="false">Комбинированная</button>
+    </div>
+  </div>
+
+  <div class="po-dr__result">
+    <span class="po-dr__sum"></span>
+    <b>Точную цену назовём после бесплатного замера</b>
+    <small>Без предоплаты, рассрочка до 48 месяцев</small>
+  </div>
+
+  <form class="po-dr__form" novalidate>
+    <label class="po-dr__label" for="po-dr-phone">Ваш телефон</label>
+    <div class="po-dr__row">
+      <input id="po-dr-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+375 (__) ___-__-__" class="po-dr__input" required>
+      <button type="submit" class="po-dr__btn">Узнать цену</button>
+    </div>
+    <input type="text" name="website" class="po-dr__hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <label class="po-dr__agree"><input type="checkbox" name="agree" required><span>Согласен(на) на обработку персональных данных</span></label>
+  </form>
+  <p class="po-dr__foot" aria-live="polite">Перезвоним в течение 15 минут в рабочее время.</p>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Изготовление и установка пластиковых дверей",
+  "serviceType": "Пластиковые двери ПВХ на заказ",
+  "url": "https://plastikaokon.by/plastikovye-dveri/",
+  "description": "Входные двери для частного дома, балконные двери, входные группы, раздвижные порталы и двери-гармошки из ПВХ по размерам проёма. Бесплатный замер, изготовление на собственном производстве и монтаж под ключ.",
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Минск"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Минская область"
+    }
+  ],
+  "provider": {
+    "@type": "Organization",
+    "name": "Пластика Окон",
+    "url": "https://plastikaokon.by/",
+    "telephone": "+375291043440",
+    "email": "sales@plastikaokon.by"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Пластиковые двери",
+    "itemListElement": [
+      {
+        "@type": "OfferCatalog",
+        "name": "Входные пластиковые двери",
+        "url": "https://plastikaokon.by/plastikovye-vkhodnye-dveri/"
+      },
+      {
+        "@type": "OfferCatalog",
+        "name": "Балконные двери",
+        "url": "https://plastikaokon.by/balkonnie-dveri/"
+      },
+      {
+        "@type": "OfferCatalog",
+        "name": "Входные группы",
+        "url": "https://plastikaokon.by/plastikovye-dveri/vhodnye-gruppy/"
+      },
+      {
+        "@type": "OfferCatalog",
+        "name": "Раздвижные двери-порталы",
+        "url": "https://plastikaokon.by/razdvijnie-dveri/"
+      },
+      {
+        "@type": "OfferCatalog",
+        "name": "Двери-гармошка",
+        "url": "https://plastikaokon.by/plastikovye-dveri/dveri-garmoshka/"
+      }
+    ]
+  }
+}
+</script>
+
+<style>
+.po-dr{--r:#D20A1E;--ink:#1C2226;--mut:#5B6268;--bg:#F3F5F9;--track:#E3E8F0;
+  display:flex;flex-direction:column;gap:18px;padding:32px;border:1px solid var(--track);border-radius:24px;background:#fff;
+  box-shadow:0 24px 60px rgba(28,34,38,.10);font-family:inherit;color:var(--ink);box-sizing:border-box}
+.po-dr *{box-sizing:border-box}
+.po-dr__head{display:flex;flex-direction:column;gap:4px}
+.po-dr__title{margin:0!important;padding:0!important;font-size:24px!important;line-height:1.2!important;font-weight:800!important;color:var(--ink)!important}
+.po-dr__sub{margin:0!important;padding:0!important;font-size:15px;color:var(--mut)}
+.po-dr__scens{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.po-dr__scen{display:flex;flex-direction:column;align-items:center;gap:6px;min-height:92px;padding:10px 4px;border:2px solid var(--track);border-radius:14px;background:var(--bg);
+  font-family:inherit;font-size:13px;font-weight:400;line-height:1.2;color:var(--ink);text-align:center;cursor:pointer;transition:border-color .2s,background .2s}
+.po-dr__scen:hover{border-color:#CDD4DE}
+.po-dr__scen.is-active{border-color:var(--r);background:#fff;font-weight:700}
+.po-dr__pic{display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px;border-radius:16px;background:var(--bg)}
+.po-dr__big{display:none;width:180px;height:180px;max-width:100%}
+.po-dr[data-scen="home"] .po-dr__big[data-k="home"],.po-dr[data-scen="balcony"] .po-dr__big[data-k="balcony"],
+.po-dr[data-scen="terrace"] .po-dr__big[data-k="terrace"],.po-dr[data-scen="shop"] .po-dr__big[data-k="shop"]{display:block}
+.po-dr__caption{font-size:13px;color:var(--mut);text-align:center}
+.po-dr__fills-wrap{display:flex;flex-direction:column;gap:8px}
+.po-dr__label{font-size:14px;font-weight:700;color:var(--ink)}
+.po-dr__fills{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.po-dr__fill{min-height:44px;padding:4px 6px;border:2px solid var(--track);border-radius:12px;background:#fff;font-family:inherit;font-size:13px;line-height:1.2;font-weight:700;overflow-wrap:anywhere;hyphens:auto;color:var(--ink);cursor:pointer;transition:border-color .2s}
+.po-dr__fill:hover{border-color:#CDD4DE}
+.po-dr__fill.is-active{border-color:var(--r);background:#FFF5F6;color:var(--r)}
+.po-dr button:focus-visible,.po-dr input:focus-visible{outline:3px solid var(--r);outline-offset:2px}
+.po-dr__result{display:flex;flex-direction:column;gap:6px;padding:16px 18px;border-radius:16px;background:var(--bg)}
+.po-dr__sum{font-size:13px;color:var(--mut)}
+.po-dr__result b{font-size:20px;line-height:1.3;font-weight:800}
+.po-dr__result small{font-size:13px;color:var(--mut)}
+.po-dr__form{display:flex;flex-direction:column;gap:8px;margin:0}
+.po-dr__row{display:flex;gap:10px}
+.po-dr__input{flex:1 1 auto;min-width:0;height:54px;padding:0 16px!important;border:1px solid #CDD4DE!important;border-radius:12px!important;
+  background:#fff!important;font-family:inherit;font-size:16px;color:var(--ink);margin:0!important}
+.po-dr__input.is-error{border-color:var(--r)!important}
+.po-dr__btn{height:54px;padding:0 22px;border:0;border-radius:12px;background:var(--ink);color:#fff;font-family:inherit;font-size:15px;font-weight:700;cursor:pointer;white-space:nowrap;transition:background .2s}
+.po-dr__btn:hover{background:var(--r)}
+.po-dr__btn[disabled]{opacity:.6;cursor:wait}
+.po-dr__agree{display:flex;align-items:flex-start;gap:8px;font-size:13px;line-height:1.4;color:var(--mut);cursor:pointer}
+.po-dr__agree input{margin:2px 0 0;width:16px;height:16px;flex-shrink:0;accent-color:var(--r)}
+.po-dr__agree.is-error{color:var(--r)}
+.po-dr__foot{margin:-4px 0 0!important;padding:0!important;font-size:13px;line-height:1.45;color:var(--mut)}
+.po-dr__foot.is-ok{color:#1E7A3C;font-weight:600;font-size:15px}
+.po-dr__foot.is-error{color:var(--r)}
+.po-dr__hp{position:absolute!important;left:-9999px!important;width:1px!important;height:1px!important;opacity:0}
+@media (prefers-reduced-motion:reduce){.po-dr *{transition:none!important}}
+@media (max-width:767px){
+  .po-dr{gap:14px;padding:18px 16px;border-radius:20px;box-shadow:0 16px 40px rgba(28,34,38,.08)}
+  .po-dr__title{font-size:20px!important}
+  .po-dr__scens{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .po-dr__scen{flex-direction:row;justify-content:flex-start;min-height:52px;padding:8px 10px;text-align:left}
+  .po-dr__ico{width:36px;height:36px;flex-shrink:0}
+  .po-dr__big{width:130px;height:130px}
+  .po-dr__fill{font-size:12px}
+  .po-dr__result b{font-size:17px}
+  .po-dr__row{flex-direction:column}
+  .po-dr__btn{width:100%}
+}
+</style>
+
+<script>
+(function () {
+  var SCEN = {
+    home:    { name: 'Входная дверь в дом', text: 'Тёплая входная дверь с многозапорным замком' },
+    balcony: { name: 'Балконная дверь',     text: 'Дверь на балкон или лоджию — отдельно или с окном' },
+    terrace: { name: 'Раздвижной портал',   text: 'Широкий выход на террасу или в сад' },
+    shop:    { name: 'Входная группа',      text: 'Дверь с боковыми и верхними светопрозрачными частями' }
+  };
+  var FILL = { glass: 'со стеклом', panel: 'глухая', combo: 'комбинированная' };
+
+  var root = document.getElementById('door-calc');
+  if (!root || root.dataset.ready) return;
+  root.dataset.ready = '1';
+  var state = { scen: 'home', fill: 'glass' };
+  var summaryText = '';
+
+  root.querySelectorAll('.po-dr__scen').forEach(function (b) {
+    b.addEventListener('click', function () { state.scen = b.dataset.scen; render(); });
+  });
+  root.querySelectorAll('.po-dr__fill').forEach(function (b) {
+    b.addEventListener('click', function () { state.fill = b.dataset.fill; render(); });
+  });
+
+  function render() {
+    root.dataset.scen = state.scen;
+    root.querySelectorAll('.po-dr__scen').forEach(function (b) {
+      var on = b.dataset.scen === state.scen; b.classList.toggle('is-active', on); b.setAttribute('aria-pressed', on);
+    });
+    root.querySelectorAll('.po-dr__fill').forEach(function (b) {
+      var on = b.dataset.fill === state.fill; b.classList.toggle('is-active', on); b.setAttribute('aria-pressed', on);
+    });
+    root.querySelector('.po-dr__caption').textContent = SCEN[state.scen].text;
+    root.querySelector('.po-dr__sum').textContent = SCEN[state.scen].name + ', ' + FILL[state.fill];
+    summaryText = 'Пластиковая дверь: ' + SCEN[state.scen].name + ', ' + FILL[state.fill];
+  }
+  render();
+
+  var form = root.querySelector('.po-dr__form');
+  var phone = form.querySelector('input[name="phone"]');
+  var agree = form.querySelector('input[name="agree"]');
+  var btn = form.querySelector('.po-dr__btn');
+  var foot = root.querySelector('.po-dr__foot');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var digits = phone.value.replace(/\D/g, '');
+    var okPhone = digits.length >= 9 && digits.length <= 15;
+    phone.classList.toggle('is-error', !okPhone);
+    phone.setAttribute('aria-invalid', !okPhone);
+    agree.closest('label').classList.toggle('is-error', !agree.checked);
+    if (!okPhone) { setFoot('Проверьте номер: нужен код оператора и 7 цифр'); phone.focus(); return; }
+    if (!agree.checked) { setFoot('Отметьте согласие на обработку данных'); return; }
+    var data = new FormData();
+    data.append('action', 'po_calc_lead');
+    data.append('phone', phone.value);
+    data.append('summary', summaryText);
+    data.append('page', window.location.href);
+    data.append('website', form.querySelector('input[name="website"]').value);
+    btn.disabled = true; btn.textContent = 'Отправляем…';
+    fetch('/wp-admin/admin-ajax.php', { method: 'POST', body: data, credentials: 'same-origin' })
+      .then(function (r) { return r.json(); })
+      .then(function (res) {
+        if (!res || !res.success) throw new Error();
+        form.style.display = 'none';
+        foot.classList.remove('is-error'); foot.classList.add('is-ok');
+        foot.textContent = 'Заявка отправлена. Перезвоним в течение 15 минут в рабочее время (9:00–18:00).';
+        if (typeof window.ym === 'function') { window.ym(43220839, 'reachGoal', 'calc_dveri'); }
+      })
+      .catch(function () {
+        setFoot('Заявка не отправилась. Позвоните нам: 8 029 104-34-40');
+        btn.disabled = false; btn.textContent = 'Узнать цену';
+      });
+  });
+  function setFoot(t) { foot.textContent = t; foot.classList.add('is-error'); }
+})();
+</script>
